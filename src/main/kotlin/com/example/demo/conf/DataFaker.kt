@@ -22,40 +22,39 @@ class DataFaker(
     @PostConstruct
     fun fake() {
         val faker = Faker()
-        if (addressRepository.count() == 0L) {
-            repeat(10) {
-                addressRepository.save(Address(null,
-                    faker.address().country(),
-                    faker.address().city(),
-                    faker.address().streetName(),
-                    faker.address().buildingNumber().toInt(),
-                    faker.address().latitude().toDouble(),
-                    faker.address().longitude().toDouble()
-                ))
-            }
+
+        addressRepository.deleteAll()
+        repeat(10) {
+            addressRepository.save(Address(null,
+                faker.address().country(),
+                faker.address().city(),
+                faker.address().streetName(),
+                faker.address().buildingNumber().toInt(),
+                faker.address().latitude().toDouble(),
+                faker.address().longitude().toDouble()
+            ))
         }
         val addresses = addressRepository.findAll()
 
-        if (userRepository.count() == 0L) {
-            repeat(10) {
-                userRepository.save(User(
-                    faker.internet().emailAddress(),
-                    faker.phoneNumber().cellPhone()
-                ))
-            }
+        userRepository.deleteAll()
+        repeat(10) {
+            userRepository.save(User(
+                faker.internet().emailAddress(),
+                faker.phoneNumber().cellPhone()
+            ))
         }
         val users = userRepository.findAll()
 
-        if (housesRepository.count() == 0L) {
-            repeat(10) {
-                housesRepository.save(House(
-                    null,
-                    users.toList().random(),
-                    true,
-                    faker.lorem().paragraph(),
-                    addresses.toList().random()
-                ))
-            }
+        housesRepository.deleteAll()
+        repeat(10) {
+            housesRepository.save(House(
+                null,
+                users.toList().random(),
+                true,
+                faker.lorem().paragraph(),
+                (1..5).toList().random(),
+                addresses.toList().random()
+        }
         }
     }
 }

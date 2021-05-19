@@ -12,6 +12,7 @@ data class House(
     val owner: User,
     val isActive: Boolean,
     val description: String,
+    val maxPeople: Int,
     @OneToOne
     var address: Address
 )
