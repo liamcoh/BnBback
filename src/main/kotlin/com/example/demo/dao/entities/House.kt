@@ -9,7 +9,6 @@ data class House(
     @GeneratedValue(strategy= GenerationType.AUTO)
     val id: Long?,
     @ManyToOne
-    @JsonBackReference
     val owner: User,
     val isActive: Boolean,
     val description: String,
