@@ -13,5 +13,5 @@ data class House(
     val isActive: Boolean,
     val description: String,
     @OneToOne
-    val address: Address
+    var address: Address
 )
