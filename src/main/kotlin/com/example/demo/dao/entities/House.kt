@@ -14,5 +14,6 @@ data class House(
     val description: String,
     val maxPeople: Int,
     @OneToOne
-    var address: Address
+    var address: Address,
+    var photo: String
 )
