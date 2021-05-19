@@ -7,5 +7,6 @@ import javax.persistence.Id
 data class User(
     @Id
     val email: String,
+    val name: String,
     val contactPhone: String,
 )

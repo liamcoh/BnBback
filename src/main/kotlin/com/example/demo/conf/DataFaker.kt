@@ -40,6 +40,7 @@ class DataFaker(
         repeat(10) {
             userRepository.save(User(
                 faker.internet().emailAddress(),
+                faker.name().name(),
                 faker.phoneNumber().cellPhone()
             ))
         }
