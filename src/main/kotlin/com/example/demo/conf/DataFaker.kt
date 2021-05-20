@@ -27,7 +27,7 @@ class DataFaker(
 
         val faker = Faker()
 
-        repeat(10) {
+        repeat(1000) {
             addressRepository.save(
                 Address(
                     null,
@@ -35,8 +35,8 @@ class DataFaker(
                     faker.address().city(),
                     faker.address().streetName(),
                     faker.address().buildingNumber().toInt(),
-                    faker.address().latitude().toDouble(),
-                    faker.address().longitude().toDouble()
+                    faker.number().randomDouble(10,30,32),//faker.address().latitude().toDouble(),
+                    faker.number().randomDouble(10,30,35)
                 )
             )
         }
@@ -53,7 +53,7 @@ class DataFaker(
         }
         val users = userRepository.findAll()
 
-        repeat(10) {
+        repeat(1000) {
             housesRepository.save(
                 House(
                     null,
