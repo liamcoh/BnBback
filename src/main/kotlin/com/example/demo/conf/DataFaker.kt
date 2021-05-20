@@ -63,9 +63,9 @@ class DataFaker(
                     (1..5).toList().random(),
                     addresses.toList().random(),
                     arrayOf(
-                        "https://www.google.com/search?q=hotel+room&rlz=1C1PNBB_enIL924IL924&sxsrf=ALeKk01Fkk4_1ULPzVJ3RZDpyXIX-mmEfQ:1621467743091&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiFrt2G9tbwAhXRUMAKHQolDPsQ_AUoAXoECAMQAw&biw=1229&bih=578#imgrc=ir2Qav_1gjJmEM",
-                        "https://www.google.com/search?q=hotel+room&rlz=1C1PNBB_enIL924IL924&sxsrf=ALeKk01Fkk4_1ULPzVJ3RZDpyXIX-mmEfQ:1621467743091&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiFrt2G9tbwAhXRUMAKHQolDPsQ_AUoAXoECAMQAw&biw=1229&bih=578#imgrc=tkUHov-lfC0zbM",
-                        "https://www.google.com/search?q=hotel+room&rlz=1C1PNBB_enIL924IL924&sxsrf=ALeKk01Fkk4_1ULPzVJ3RZDpyXIX-mmEfQ:1621467743091&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiFrt2G9tbwAhXRUMAKHQolDPsQ_AUoAXoECAMQAw&biw=1229&bih=578#imgrc=130V6HWjJViTbM"
+                        "https://blisssaigon.com/wp-content/uploads/2019/10/Untitled.jpg",
+                        "https://miro.medium.com/max/5360/1*p1zBnv11CSx_EII8sB9Uaw.jpeg",
+                        "https://expatlifeinthailand.com//assets/media/2018/08/dirtiest.jpg"
                     ).random()
                 )
             )
