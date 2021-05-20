@@ -66,7 +66,11 @@ class DataFaker(
                         "https://blisssaigon.com/wp-content/uploads/2019/10/Untitled.jpg",
                         "https://miro.medium.com/max/5360/1*p1zBnv11CSx_EII8sB9Uaw.jpeg",
                         "https://expatlifeinthailand.com//assets/media/2018/08/dirtiest.jpg"
-                    ).random()
+                    ).random(),
+                    faker.bool().bool(),
+                    faker.bool().bool(),
+                    faker.bool().bool(),
+                    faker.bool().bool()
                 )
             )
         }
