@@ -37,6 +37,7 @@ class DataFaker(
                     faker.address().buildingNumber().toInt(),
                     faker.number().randomDouble(10,30,32),//faker.address().latitude().toDouble(),
                     faker.number().randomDouble(10,30,35)
+
                 )
             )
         }
