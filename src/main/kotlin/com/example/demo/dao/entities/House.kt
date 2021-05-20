@@ -15,9 +15,9 @@ data class House(
     val maxPeople: Int,
     @OneToOne
     var address: Address,
-    var photo: String,
-    val disabledAccess: Boolean,
-    val animals: Boolean,
-    val mamad: Boolean,
-    val kosher: Boolean
+    var photo: String?,
+    val disabledAccess: Boolean?,
+    val animals: Boolean?,
+    val mamad: Boolean?,
+    val kosher: Boolean?
 )
