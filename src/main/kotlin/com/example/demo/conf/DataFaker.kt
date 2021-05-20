@@ -53,7 +53,7 @@ class DataFaker(
         }
         val users = userRepository.findAll()
 
-        repeat(1000) {
+        repeat(40) {
             housesRepository.save(
                 House(
                     null,
