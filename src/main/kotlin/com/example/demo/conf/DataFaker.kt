@@ -27,7 +27,7 @@ class DataFaker(
 
         val faker = Faker()
 
-        repeat(1000) {
+        repeat(10) {
             addressRepository.save(
                 Address(
                     null,
